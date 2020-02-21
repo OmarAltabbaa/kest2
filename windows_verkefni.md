@@ -27,7 +27,29 @@
    * Why does Microsoft recommend using Uninstall or change a program to remove an installed application?
       * Sometimes, the uninstall software does not fully remove all of the files and settings created by the application during          installation. The Microsoft Windows Uninstall or change a program utility removes the application completely.
  # 10.2.1.8 Lab - Create a Partition in Windows
-  * 
+  * What type of File System is used on the NEW VOLUME (I:)?
+    * FAT32
+  * How much Free Space is shown?
+    * 1.94 GB
+  * List the tabs found in the NEW VOLUME (I): Properties window?
+    * General, Tools, Hardware, Sharing, ReadyBoost, Customize
+  * What tabs are listed in the ITE Test Document Properties window? 
+    * General and Details
+  * What happens if you do not run as administrator when you open the command prompt?
+    * You would not be able to make many changes on the computer
+  * What type of File System is used for the ITE (I:) drive?
+    * NTFS
+  * What are the tabs in the ITE (I:) Properties window?
+    *  General, Tools, Hardware, Sharing,Security ,ReadyBoost,Quota ,Customize
+  * When the volume was FAT32, there were three tabs. What is the name of the new tab that was added after the volume was converted to NTFS?
+    * Security and Quota
+  * What are the tabs in the ITE Test Document Properties window?
+    * General, Security, Details, Previous
+  * When the volume was FAT32, there were three tabs. What is the name of the new tab that was added
+after the volume was converted to NTFS?
+    * Security
+  * Why is there an additional Security tab in the properties window of documents stored on an NTFS volume?
+    * The security tab provides a way to display and change permissions of the documents.
  # 11.1.2.10 Lab - Explore the Windows Desktop
   * List some of the icons that are on the Desktop
     * Recycle Bin 
@@ -293,7 +315,155 @@ why would it be grayed out?
     * Disable Device
     * Uninstall Device
  # 11.3.1.11 Lab - Monitor and Manage System Resources
-  *
+  * What is the status of the service?
+    * Running
+  * Look for Windows Defender Antivirus Network Inspection Service (Windows 10) or Windows
+Defender Service (Windows 8.1) or Window Defender (Windows 7). Record the Windows Defender
+status.
+    * Stopped
+  * In the General tab, what is listed as the Source of the event? What is the severity level
+    * Source : SecurityCenter
+    * level : Information
+  * In Notepad, click File > Print. Record a listed printer below. Note: You do not need to install a physical
+printer.
+    * OneNote
+  * What message did you receive? How would you fix this?
+    * Before you can perform printer-related tasks such as page setup or printing a document, you need to install a printer. Do you want to install a printer now?
+    * change to start
+  * When DHCP Client stops, what other services will also be stopped?
+    * IP Helper
+    * WinHTTP Web Proxy Auto-Discovery Service
+    * Network Connected Devices Auto-Setup
+    * Network List Service
+    * Network Location Awareness
+  * Why is it important to exercise care when managing services?
+    * Applications and other services may depend on a given service to work. Stopping a service can compromise the operation of other services
+  * What is the full path name to the example file name?
+    * C:\PerfLogs\DESKTOP-NQP8202_20200220-000001\DataCollector01.csv
+  * What does the column farthest to the right show?
+    * Available memory in MBytes.
+ # 11.3.2.7 Lab - System Utilities
+  * What was the path you use to navigate to the Event Viewer?
+    * Console Root\management tools\Computer Management\ (Local)\System Tools\Event Viewer
+  * What is the background picture?
+    * picture
+  * What is the data value of the Background (hint – it has three numbers that correspond to red, green, and
+blue)?
+    * 0 99 177
+  * What is the data value of the Background?
+    * 0 99 177
+  * What is the data value of the Background? Compare the new value in the Registry to the value saved in
+BlueBKG.reg
+    * 232 17 35
+    * The saved value is still 0 99 177
+  * What is the data value of the Background?
+    * 0 99 177
+  * What is the color of the desktop?
+    * blue
+  * What is the color of the desktop?
+    * red
+  * Why would it be beneficial to add snap-ins to the mmc that are for other computers on the network?
+    * It would make it easier to monitor other computers that do not have monitors, keyboards, or mice, or that are not easily accessible
+  * After restarting the computer, why was the desktop color changed?
+    * The value in the registry file contained a value that was not the same as the current value. After restarting, the computer read the value and changed the desktop color to match it.
+ # 11.3.2.8 Lab - Manage System File
+  * Under the System Summary heading locate and list the following:
+    * Processor: AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx, 2300 Mhz, 4 Core(s), 8 Logical Processor(s)
+    * BIOS Version/Date : AMI F.19
+    * Total Physical Memory : 13.9 GB
+  * DMA channels and the device using the resources.
+    * Channel 4 
+    * Direct memory access controller	
+  * Under the Components heading locate and list the following:
+    * Adapter Description : AMD Radeon(TM) RX Vega 10 Graphics
+    * Adapter RAM	: (2,147,483,648) bytes
+  * Under the Software Environment heading, where would you find the applications that automatically load when the computer boots?
+    * Start-up Programs
+  * What are the startup options?
+    * Normal startup 
+    * Diagnostic startup
+    * selective startup
+  * Can you enable and disable services at this tab?
+    * Yas
+  * What can you do in this tab?
+    * Display Windows version information
+    * Change User Account Control settings
+    * Open Security and Maintenance
+    * Troubleshoot problems with your computer
+    * View and configure system settings and components.
+    * And some other things
+  * What does this tool report?
+    * the tool reports detailed infformation about the DirectX components and drivers installed on your system
+  * What information is listed on this page (display)?
+    * Device
+    * DirectX Fwatures
+    * Drivers
+  * What information is listed on this page (sound)?
+    * Device
+    * Drivers
+  * What information is listed on this page ( input)?
+    * Directlnput Devices
+    * InputRelated Devices
+    * Notes
+  * Why would it be beneficial to turn off a service in the system configuration?
+    *  It may be beneficial to turn off a service if that service may have become unresponsive, or if a service is using too many resources.
+  * When would you use the startup tab of the system configuration tool?
+    *  There may be programs that you do not wish to start when the computer boots.
+ # 11.4.1.5 Lab - Work in the Windows Command Shell
+  * To see the next page, press the spacebar. What happens when you press enter?
+    * An explanation of what the matter does
+  * CD : Displays the name of or changes the current directory.
+  * CHKDSK : Checks a disk and displays a status report.
+  * COPY :Copies one or more files to another location.
+  * DEL : Deletes one or more files.
+  * DIR :Displays a list of files and subdirectories in a directory.
+  * DISKPART :	Displays or configures Disk Partition properties.
+  * EXIT :Quits the CMD.EXE program.
+  * FORMAT : Formats a disk for use with Windows.
+  * GPRESULT : Displays Group Policy information for machine or user.
+  * MD : Creates a directory.
+  * TASKLIST :Display all currently running tasks including services.
+  * RD : Removes a directory
+  * ROBOCOPY :  Advanced utility to copy files and directory trees.
+  * SHUTDOWN :  Allows proper local or remote shutdown of machine
+  * XCOPY: Copies files and directory trees.
+  * What command did you use (clear)?
+    * cls
+  * What is the last command that you have used? Press Esc on the keyboard to exit the dialog box
+    * cls
+  * What is the last command?
+    * cls
+ # 11.4.2.7 Lab - File System Commands
+  * What is the current directory?
+    * C:\Users\Omar
+  * Which folder are you in now?
+    * C:\Users\Omar\ITEfolder3
+  * After issuing the cd .. command, what is your directory now?
+    * C:\Users\Omar
+  * What would be the current directory if you issue this command at C:\Users\ITEfolder4?
+    * C:\Users
+  * What single command would you use to delete all the files with doc2 in the filename? Use the command
+to remove the files with doc2 in the filename
+    * (*del *doc2)
+  * What command would you use to delete all the files in the directory? Use the command to remove the
+files.
+    * (*del)
+  * What option allows you to copy all the files and directories, including the empty directories?
+    * Xcopy/S
+  * Were you able to delete the directory? Explain.
+    * No because the directory is not empty
+  * What are the advantages of using CLI vs. GUI?
+    * The commands in the CLI in Windows have not changed in the different Windows versions. The GUI interfaces have changed a lot in different Windows versions
+  
+  
+
+
+
+    
+
+
+    
+
 
 
     
