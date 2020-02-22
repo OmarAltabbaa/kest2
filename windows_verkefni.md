@@ -18,7 +18,7 @@
   * Which BIOS version is installed in your computer?
     * 10.0.18362.1
   * What is the current BIOS version available for the motherboard? 
-    * 10.0.18362.1
+    * 40.37
   * What are the instructions to update the new BIOS version?
      * Download HP support and assistant and search for new software and drivers. Download BIOS update and restart computer.
  # 3.1.2.7 Lab - Install Third-Party Software in Windows
@@ -454,6 +454,40 @@ files.
     * No because the directory is not empty
   * What are the advantages of using CLI vs. GUI?
     * The commands in the CLI in Windows have not changed in the different Windows versions. The GUI interfaces have changed a lot in different Windows versions
+ # 11.4.3.2 Lab - Disk CLI Commands
+  * What is the option to fix errors on the drive?
+    * chkdsk /F
+  * What is the option to force the volume to dismount first if necessary? 
+    * chkdsk /X
+  * What is the option to locate bad sectors and recover readable information?
+    * chkdsk /R
+  * What happened? Explain.
+    * its give as information abaut all commend I can use it with the commend Chkdsk
+  * What is the file system of the drive?
+    * NTFS
+  * What option is used to determine the maximum number of bytes that the volume can be shrink by?
+    * 
+  * What is the maximum number of reclaimable bytes?
+    * 
+ # 11.4.4.2 Lab - Task and System CLI Commands
+  * What is the option to list the modules that are associated with a task?
+    * TaskList /M
+  * What command would you use if you want to find all the tasks that use the module oleaut32.dll?
+    * TaskList /M
+      * atieclxx.exe                 22816 OLEAUT32.dll
+      * chrome.exe                    1000 OLEAUT32.dll
+      * AMDRSServ.exe                29548 OLEAUT32.dll
+      * SystemSettings.exe           21664 OLEAUT32.dll
+      * chrome.exe                   28328 OLEAUT32.dll
+      * chrome.exe                   14340 OLEAUT32.dll
+      * chrome.exe                   24812 OLEAUT32.dll
+      * conhost.exe
+  * What command would you use to find out all the tasks that are associated with your username?
+    * TaskList /U username
+  * What command would you use to find out all the processes that have been running for more than 1 hour
+and 40 minutes?
+    * tasklist /fi "cputime gt 01:40:00"
+
   
   
 
