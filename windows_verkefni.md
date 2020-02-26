@@ -487,10 +487,30 @@ files.
   * What command would you use to find out all the processes that have been running for more than 1 hour
 and 40 minutes?
     * tasklist /fi "cputime gt 01:40:00"
+  * What command would you use if you wanted to terminate all process owned by a particular user?
+    * taskkill /U username
+  * What option would you use if you only wanted to scan the integrity of all the protected system files?
+    * sfc /scannow
+  * What would you add to the command so you can view the output one page at a time?
+    * | more
+  * Enter the command to log off your computer.
+    * shutdown /l
+  * Log back into the computer and shut it down in 120 seconds using the command line?
+    *  shutdown /s /t 120 /c
+  * What warning message did you see?
+    * "Shutdown in 120 seconds"
+  * What command would you use to abort the shutdown?
+    * shutdown /a
+ # 11.4.5.3 Lab - Other Useful Commands 
+  * When does the password expire?
+    * never
+ 
+  
 
   
   
 
+   
 
 
     
